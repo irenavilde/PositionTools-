@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Positioning test project</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<main>
+	
+		<div class = "demoScreen">
+		
+			<div id = "demoCubeBase"></div>
+			<div id = "demoCubeToPosition"></div>
+		
+		</div>
+		
+		<div class="content-center">
+		
+			<h1>Positioning Tool Demo</h1>
+			
+			<form>
+			
+				<label for="position">Position Relative to Base Element</label>
+				<select id="position" name="position">
+				
+					<!-- Basic Positions -->
+					<optgroup label="Basic Positions">
+						<option value="top">Top</option>
+						<option value="right">Right</option>
+						<option value="bottom">Bottom</option>
+						<option value="left">Left</option>
+					</optgroup>
+					
+					<!-- Corner Positions -->
+					<optgroup label="Corner Positions">
+						<option value="topLeft">Top Left</option>
+						<option value="topRight">Top Right</option>
+						<option value="bottomLeft">Bottom Left</option>
+						<option value="bottomRight">Bottom Right</option>
+					</optgroup>
+					
+					<!-- Centered Positions -->
+					<optgroup label="Centered Positions">
+						<option value="topCenter">Top Center</option>
+						<option value="rightCenter">Right Center</option>
+						<option value="bottomCenter">Bottom Center</option>
+						<option value="leftCenter">Left Center</option>
+					</optgroup>
+					
+				</select>
+				
+				<label for="distance">Spacing Between Elements</label>
+				<input id="distance" type="number" value="0">
+				<label for="offset">Horizontal/Vertical Offset</label>
+				<input id="offset" type="number" value="0">
+
+				<button id="createBtn" type="button">Update Position</button>				
+
+			</form>
+			
+		</div>	
+
+	</main>
+
+	<!-- The library will be available globally as PositionTools
+	const baseElement = document.getElementById('base');
+	const tooltip = document.getElementById('tooltip');
+    
+	PositionTools.positionBottom(baseElement, tooltip, 10); -->
+	<script src="position-tools.js" > </script>
+	<script src="main.js" > </script>
+</body>
+</html>

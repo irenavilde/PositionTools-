@@ -1,0 +1,124 @@
+:root {
+	
+	---screen-color: 		green;
+	---button-bg-color: 	yellow;
+	---button-enh-color: 	rgb(233,233,233);
+	---h1-color: 			yellow;
+	---text-color: 			rgb(233,233,233);
+	---cube-base-color: 	gray;
+	---cube-move-color: 	red;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
+u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, 
+tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, 
+hgroup, menu, nav, section, summary, time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                              
+	vertical-align: baseline;          
+	background: transparent;      
+	font-size: 100%;   
+	box-sizing: border-box;	
+}
+li {
+	list-style:none;
+}
+
+body {
+	width: 100%;
+	height: 100vh; 
+	overflow-y: auto;
+ 	background-color:var(---screen-color); 
+	color: var(---text-color);
+	font-weight: bold;
+	text-align: center;
+}
+
+main {
+	
+	position: relative;
+	display: flex; 
+	justify-content: center; 
+	flex-wrap: wrap;
+	gap: 100px;
+}
+
+.demoScreen {
+	
+	padding: 150px 150px 0 0;
+	text-align: center;
+	
+}
+	.demoScreen #demoCubeBase {
+		
+		display: inline-block;
+		width: 200px;
+		height: 200px;
+		background-color: var(---cube-base-color);
+	}
+	
+	.demoScreen #demoCubeToPosition {
+		
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 100px;
+		height: 100px;
+		background-color: var(---cube-move-color);
+	}	
+
+h1 {
+	font-size: 1.5em;
+	border-bottom: 1px solid var(---text-color);
+	display: inline-block;
+	margin: 50px;
+	color: var(---h1-color);
+}
+	
+.content-center { 	
+	padding-top: 10px;
+}		
+	.content-center form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 25px;
+	}
+		.content-center form label {
+			font-size: 1.2em;
+		}
+		.content-center form input {
+			padding: 6px;
+			font-size: 1.1em;
+			text-align: left;
+			width: 100px;
+		}
+		.content-center form select {
+			padding: 6px;
+			font-size: 1.1em;
+			text-align: left;
+			width: 200px;
+		}
+		.content-center form optgroup {
+			padding: 3px 0;
+			font-weight: bold;
+		}
+
+		.content-center form button {
+			padding: 10px 20px;
+			margin-top: 10px;
+			font-size: 1.1em;
+			font-weight: bold;
+			background: transparent;
+			color: var(---button-bg-color);
+			border: 2px solid var(---button-bg-color);
+			border-radius: 10px;
+			cursor: pointer;
+		}
+			.content-center form button:hover {
+				color: var(---button-enh-color);
+			}
+
+		
