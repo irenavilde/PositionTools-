@@ -60,7 +60,7 @@ PositionTools.positionBottomCenter(baseElement, targetElement, 30);
 - offset - Horizontal/vertical offset for corner positions (Number)
 
 # Live Demo
-Check out the interactive demo in the [Open demo video]([https://youtu.be/HVB-r7Sh9MU]) file to test all positioning options!
+Check out the interactive demo in the [![Watch on YouTube]](https://youtu.be/HVB-r7Sh9MU) to test all positioning options!
 
 # Browser Support
 Works in all modern browsers (Chrome, Firefox, Safari, Edge)
