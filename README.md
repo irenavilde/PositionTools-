@@ -1,5 +1,6 @@
-# PositionTools-
+# Position-Tools-
 A lightweight, robust JavaScript library for precise element positioning relative to other elements on the page.
+#JavaScript #WebDevelopment #Positioning #Frontend #OpenSource
 
 # Features
 - 12 Positioning Options - Top, bottom, left, right, corners, and centered edges
@@ -17,9 +18,12 @@ The video demonstrates:
 - Responsive behavior
 
 # Installation
+```javascript
 <script src="position-tools.js"></script>
+```
 
 # Quick Start
+```javascript
 // Position element 20px below base element
 PositionTools.positionBottom(baseElement, targetElement, 20);
 
@@ -28,6 +32,7 @@ PositionTools.positionTopLeft(baseElement, targetElement, 10, 15);
 
 // Center element below with 30px spacing
 PositionTools.positionBottomCenter(baseElement, targetElement, 30);
+```
 
 # API Reference
 ## Basic Positioning
@@ -55,10 +60,13 @@ PositionTools.positionBottomCenter(baseElement, targetElement, 30);
 - offset - Horizontal/vertical offset for corner positions (Number)
 
 # Live Demo
-Check out the interactive demo in the demo.mp4 file to test all positioning options!
+Check out the interactive demo in the [Open demo video](./demo.mp4) file to test all positioning options!
 
 # Browser Support
 Works in all modern browsers (Chrome, Firefox, Safari, Edge)
 
 # License
 MIT License - feel free to use in personal and commercial projects.
+
+**Tags:** `javascript` `frontend` `positioning` `layout` `web-development`
+**Hashtags:** #JavaScript #WebDevelopment #Positioning #OpenSource #FrontendTools
